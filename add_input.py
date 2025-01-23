@@ -10,7 +10,7 @@ username=input("Имя пользователя:")
 title=input('Введите заголовок заметки:')
 content=input('Введите содержание:')
 status=input('Введите статус:')
-created_date=input('Введите дату создания заметки:'22-01-24)
+created_date=input('Введите дату создания заметки:')
 issue_date=input('Введите дату истечения заметки:')
 
 print('Имя пользователя',username)
