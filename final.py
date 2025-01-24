@@ -1,10 +1,4 @@
 
-#username - имя пользователя
-#title - заголовок заметки
-#content - описание заметки
-#status - статус заметки
-#created_date - дата создания заметки в формате "день-месяц-год", например "10-11-2024"
-#issue_date - дата истечения заметки (дедлайн) в формате "день-месяц-год", например "10-12-2024"
 
 
 username=input("Имя пользователя:")
@@ -23,11 +17,11 @@ note['Имя пользователя: '] = username
 note['Описание заметки: '] = content
 note['Статус заметки: '] = status
 note['Дата создания заметки: '] = created_date
-note['Дата истечения заметки (дедлайн): '] = issue_date
+note['Введите дату истечения заметки:'] = issue_date
 note['Заголовки: '] = title_list
 
 
 print("\nЗаметка:")
 
-for title in title_list:
-    print(title)
+for key, value in note.items():
+        print(f"{key}: {value}")
